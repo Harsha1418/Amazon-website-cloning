@@ -1,0 +1,12 @@
+def recpow(b,p):
+	if(p==0):
+		return 1
+	else:
+		return (b*recpow(b,p-1))
+b,p=int(input()),int(input())
+if(p>0):
+	res=recpow(b,p)
+	print("{} power {}={}".format(b,p,res))
+else:
+	res=b**p
+	print("{} power {}={}".format(b,p,res))
